@@ -76,6 +76,8 @@ p {
 }
 ```
 
+:computer:
+
 ### CSS resolvió un gran problema
 
 ¡HTML nunca tuvo la intención de contener etiquetas para formatear una página web!
@@ -98,7 +100,7 @@ Las definiciones de estilo se guardan normalmente en archivos externos `.css`.
 
 ¡Con un archivo de hoja de estilo externo, puede cambiar el aspecto de un sitio web completo cambiando solo un archivo!
 
-## CSS Syntax
+## Sintaxis CSS
 
 ### Sintaxis CSS
 
@@ -124,6 +126,8 @@ p {
   text-align: center;
 }
 ```
+
+:computer:
 
 Ejemplo explicado
 
