@@ -136,6 +136,61 @@ Ejemplo explicado
 * `text-align`es una propiedad y `center`es el valor de la propiedad
 
 ## CSS Selectors
+
+### Selectores CSS
+
+Los selectores CSS se utilizan para "encontrar" (o seleccionar) los elementos HTML que desea diseñar.
+
+Podemos dividir los selectores CSS en cinco categorías:
+
+* Selectores simples (seleccione elementos basados ​​en nombre, id, clase)
+* Selectores de combinador (seleccione elementos basados ​​en una relación específica entre ellos)
+* Selectores de pseudo-clase (seleccione elementos basados ​​en un cierto estado)
+* Selectores de pseudoelementos (seleccionar y diseñar una parte de un elemento)
+* Selectores de atributos (seleccione elementos basados ​​en un atributo o valor de atributo)
+
+Esta página explicará los selectores CSS más básicos.
+
+### El selector de elementos CSS
+
+El selector de elementos selecciona elementos HTML en función del nombre del elemento.
+
+#### Ejemplo
+
+Aquí, todos los elementos <p> de la página estarán alineados al centro, con un color de texto rojo: 
+
+```css
+p {
+  text-align: center;
+  color: red;
+}
+```
+
+:computer:
+
+### El selector de id. De CSS
+
+El selector de id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.
+
+¡La identificación de un elemento es única dentro de una página, por lo que el selector de identificación se usa para seleccionar un elemento único!
+
+Para seleccionar un elemento con una identificación específica, escriba un carácter hash (#), seguido de la identificación del elemento.
+
+#### Ejemplo
+
+La siguiente regla CSS se aplicará al elemento HTML con id = "para1": 
+
+```css
+#para1 {
+  text-align: center;
+  color: red;
+}
+```
+
+:computer:
+
+**Nota:** ¡Un nombre de identificación no puede comenzar con un número!
+
 ## CSS How To
 ## CSS Comments
 ## CSS Colors
