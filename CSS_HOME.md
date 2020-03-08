@@ -143,21 +143,21 @@ Los selectores CSS se utilizan para "encontrar" (o seleccionar) los elementos HT
 
 Podemos dividir los selectores CSS en cinco categorías:
 
-* Selectores simples (seleccione elementos basados ​​en nombre, id, clase)
-* Selectores de combinador (seleccione elementos basados ​​en una relación específica entre ellos)
-* Selectores de pseudo-clase (seleccione elementos basados ​​en un cierto estado)
-* Selectores de pseudoelementos (seleccionar y diseñar una parte de un elemento)
-* Selectores de atributos (seleccione elementos basados ​​en un atributo o valor de atributo)
+* Simple selectors (seleccione elementos basados en name, id, class)
+* Combinator selectors (seleccione elementos basados en una relación específica entre ellos)
+* Pseudo-class selectors (seleccione elementos basados en un cierto estado)
+* Pseudo-elements selectors (seleccionar y diseñar una parte de un elemento)
+* Attribute selectors (seleccione elementos basados en un atributo o valor de atributo)
 
 Esta página explicará los selectores CSS más básicos.
 
-### El selector de elementos CSS
+### El CSS element Selector (Selector de elementos CSS)
 
 El selector de elementos selecciona elementos HTML en función del nombre del elemento.
 
 #### Ejemplo
 
-Aquí, todos los elementos <p> de la página estarán alineados al centro, con un color de texto rojo: 
+Aquí, todos los elementos `<p>` de la página estarán alineados al centro, con un color de texto rojo: 
 
 ```css
 p {
@@ -168,17 +168,17 @@ p {
 
 :computer:
 
-### El selector de id. De CSS
+### El CSS id Selector (selector id CSS)
 
-El selector de id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.
+El selector id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.
 
-¡La identificación de un elemento es única dentro de una página, por lo que el selector de identificación se usa para seleccionar un elemento único!
+El `id` de un elemento es única dentro de una página, por lo que el selector id se usa para seleccionar un elemento único!
 
-Para seleccionar un elemento con una identificación específica, escriba un carácter hash (#), seguido de la identificación del elemento.
+Para seleccionar un elemento con un id específico, escriba un carácter hash (#), seguido de la identificación del elemento.
 
 #### Ejemplo
 
-La siguiente regla CSS se aplicará al elemento HTML con id = "para1": 
+La siguiente regla CSS se aplicará al elemento HTML con `id = "para1"`: 
 
 ```css
 #para1 {
@@ -190,6 +190,77 @@ La siguiente regla CSS se aplicará al elemento HTML con id = "para1":
 :computer:
 
 **Nota:** ¡Un nombre de identificación no puede comenzar con un número!
+
+### El CSS Universal Selector
+
+El selector universal (`*`) selecciona todos los elementos HTML en la página.
+
+#### Ejemplo
+
+La siguiente regla CSS afectará a cada elemento HTML en la página: 
+
+```css
+* {
+  text-align: center;
+  color: blue;
+}
+```
+
+:computer:
+
+
+### El CSS Grouping Selector
+
+El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de estilo.
+
+Mire el siguiente código CSS (los elementos h1, h2 y p tienen las mismas definiciones de estilo):
+
+```css
+h1 {
+  text-align: center;
+  color: red;
+}
+
+h2 {
+  text-align: center;
+  color: red;
+}
+
+p {
+  text-align: center;
+  color: red;
+}
+```
+
+Será mejor agrupar los selectores para minimizar el código.
+
+Para agrupar selectores, separe cada selector con una coma.
+
+#### Ejemplo
+
+En este ejemplo, hemos agrupado los selectores del código anterior: 
+
+```css
+h1, h2, p {
+  text-align: center;
+  color: red;
+}
+```
+:computer:
+
+¡Ponte a prueba con ejercicios!
+:computer: :computer: :computer: :computer:
+
+Todos CSS Simple Selectors
+
+Selector | Example | Example description
+---------|---------|--------------------
+`.class` | `.intro` | Selects all elements with class="intro"
+`#id` | `#firstname` | Selects the element with id="firstname"
+`*` | `*` | Selects all elements
+`element` | `p` | Selects all <p> elements
+`element,element,..` | `div, p` | Selects all <div> elements and all <p> elements
+
 
 ## CSS How To
 ## CSS Comments
