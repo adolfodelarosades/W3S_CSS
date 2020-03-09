@@ -453,7 +453,7 @@ h1 {
 }
 ```
 
-#### Ejemplo
+#### Ejemplo
 
 Si el estilo interno se define **después** del enlace a la hoja de estilo externa, los elementos `<h1>` serán `"orange"`:
 
