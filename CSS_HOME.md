@@ -312,21 +312,25 @@ Selector | Example | Example description
 
 ## Como Añadir CSS
 
-Cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la información en la hoja de estilo.
+Cuando un navegador lee una hoja de estilo, está formateará el documento HTML de acuerdo con la información en la hoja de estilo.
 
-Tres formas de insertar CSS
+### Tres Formas de Insertar CSS
+
 Hay tres formas de insertar una hoja de estilo:
 
-CSS externo
-CSS interno
-CSS en línea
-CSS externo
+* CSS externo
+* CSS interno
+* CSS en línea
+
+### CSS externo
+
 ¡Con una hoja de estilo externa, puede cambiar el aspecto de un sitio web completo cambiando solo un archivo!
 
-Cada página HTML debe incluir una referencia al archivo de hoja de estilo externo dentro del elemento <link>, dentro de la sección de encabezado.
+Cada página HTML debe incluir una referencia al archivo de hoja de estilo externo dentro del elemento `<link>`, dentro de la sección de encabezado(head) .
 
-Ejemplo
-Los estilos externos se definen dentro del elemento <link>, dentro de la sección <head> de una página HTML:
+#### Ejemplo
+
+Los estilos externos se definen dentro del elemento `<link>`, dentro de la sección `<head>` de una página HTML:
 
 ```css
 <!DOCTYPE html>
@@ -365,7 +369,7 @@ h1 {
 }
 ```
 
-**Nota**: No agregue un espacio entre el valor de la propiedad y la unidad (como margin-left: 20 px;). La forma correcta es:margin-left: 20px;
+**Nota**: No agregue un espacio entre el valor de la propiedad y la unidad (como `margin-left: 20 px;`). La forma correcta es: `margin-left: 20px;`
 
 ### CSS interno
 
@@ -404,6 +408,7 @@ h1 {
 :computer:
 
 ### CSS en línea
+
 Se puede usar un estilo en línea para aplicar un estilo único para un solo elemento.
 
 Para usar estilos en línea, agregue el atributo de estilo al elemento relevante. El atributo de estilo puede contener cualquier propiedad CSS.
@@ -424,13 +429,15 @@ Los estilos en línea se definen dentro del atributo "estilo" del elemento relev
 </html>
 ```
 
-**Consejo**: Un estilo en línea pierde muchas de las ventajas de una hoja de estilo (al mezclar contenido con presentación). Use este método con moderación.
+:computer:
 
-### Múltiples hojas de estilo
+**Tip**: Un estilo en línea pierde muchas de las ventajas de una hoja de estilo (al mezclar contenido con presentación). Use este método con moderación.
+
+### Múltiples Hojas de Estilo (Style Sheets)
 
 Si se han definido algunas propiedades para el mismo selector (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída. 
 
-Suponga que una hoja de estilo externa tiene el siguiente estilo para el elemento <h1>:
+Suponga que una **hoja de estilo externa** tiene el siguiente estilo para el elemento <h1>:
 
 
 ```css
@@ -439,7 +446,7 @@ h1 {
 }
 ```
 
-Luego, suponga que una hoja de estilo interna también tiene el siguiente estilo para el elemento <h1>:
+Luego, suponga que una **hoja de estilo interna** también tiene el siguiente estilo para el elemento <h1>:
   
 ```css
 h1 {
@@ -448,7 +455,8 @@ h1 {
 ```
 
 #### Ejemplo
-Si el estilo interno se define después del enlace a la hoja de estilo externa, los elementos <h1> serán "naranjas":
+
+Si el estilo interno se define **después** del enlace a la hoja de estilo externa, los elementos <h1> serán "orange":
 
 ```css
 <head>
@@ -465,7 +473,8 @@ h1 {
 
 
 #### Ejemplo
-Sin embargo, si el estilo interno se define antes del enlace a la hoja de estilo externa, los elementos <h1> serán "azul marino": 
+
+Sin embargo, si el estilo interno se define **antes** del enlace a la hoja de estilo externa, los elementos <h1> serán "navy": 
   
 ```css
 <head>
@@ -480,15 +489,16 @@ h1 {
 
 :computer:
 
-### Orden en cascada
+### Orden en Cascada
 
 ¿Qué estilo se usará cuando haya más de un estilo especificado para un elemento HTML?
 
 Todos los estilos de una página se "encadenarán" en una nueva hoja de estilo "virtual" según las siguientes reglas, donde el número uno tiene la máxima prioridad:
 
-Estilo en línea (dentro de un elemento HTML)
-Hojas de estilo externas e internas (en la sección del encabezado)
-Navegador predeterminado
+1. Estilo en línea (dentro de un elemento HTML)
+2. Hojas de estilo externas e internas (en la sección head)
+3. Navegador predeterminado
+
 Por lo tanto, un estilo en línea tiene la máxima prioridad y anulará los estilos externos e internos y los valores predeterminados del navegador.
 
 :computer:
