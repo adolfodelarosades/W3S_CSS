@@ -141,11 +141,11 @@ Los selectores CSS se utilizan para "encontrar" (o seleccionar) los elementos HT
 
 Podemos dividir los selectores CSS en cinco categorías:
 
-* Simple selectors (seleccione elementos basados en name, id, class)
-* Combinator selectors (seleccione elementos basados en una relación específica entre ellos)
-* Pseudo-class selectors (seleccione elementos basados en un cierto estado)
-* Pseudo-elements selectors (seleccionar y diseñar una parte de un elemento)
-* Attribute selectors (seleccione elementos basados en un atributo o valor de atributo)
+* **Simple selectors** (seleccione elementos basados en name, id, class)
+* **Combinator selectors** (seleccione elementos basados en una relación específica entre ellos)
+* **Pseudo-class selectors** (seleccione elementos basados en un cierto estado)
+* **Pseudo-elements selectors** (seleccionar y diseñar una parte de un elemento)
+* **Attribute selectors** (seleccione elementos basados en un atributo o valor de atributo)
 
 Esta página explicará los selectores CSS más básicos.
 
@@ -166,13 +166,13 @@ p {
 
 :computer:
 
-### El CSS id Selector (selector id CSS)
+### El CSS id Selector Selector id CSS)
 
-El selector id utiliza el atributo id de un elemento HTML para seleccionar un elemento específico.
+El selector `id` utiliza el atributo `id` de un elemento HTML para seleccionar un elemento específico.
 
-El `id` de un elemento es única dentro de una página, por lo que el selector id se usa para seleccionar un elemento único!
+El `id` de un elemento es única dentro de una página, por lo que el selector `id` se usa para seleccionar un elemento único!
 
-Para seleccionar un elemento con un id específico, escriba un carácter hash (#), seguido de la identificación del elemento.
+Para seleccionar un elemento con un `id` específico, escriba un carácter hash (#), seguido de la identificación del elemento.
 
 #### Ejemplo
 
@@ -187,7 +187,56 @@ La siguiente regla CSS se aplicará al elemento HTML con `id = "para1"`:
 
 :computer:
 
-**Nota:** ¡Un nombre de identificación no puede comenzar con un número!
+**Nota:** ¡Un id name no puede comenzar con un número!
+
+### El CSS class Selector (Selector class)
+
+El selector class selecciona elementos HTML con un atributo `class` específico.
+
+Para seleccionar elementos con una clase específica, escriba un carácter de punto (.), Seguido del nombre de la clase.
+
+#### Ejemplo
+
+En este ejemplo, todos los elementos HTML con `class = "center"` serán rojos y alineados al centro: 
+
+
+```css
+.center {
+  text-align: center;
+  color: red;
+}
+```
+
+:computer:
+
+También puede especificar que solo los elementos HTML específicos se vean afectados por una clase.
+
+#### Ejemplo
+
+En este ejemplo, solo los elementos `<p>` con `class = "center"` estarán alineados al centro: 
+
+```sh
+p.center {
+  text-align: center;
+  color: red;
+}
+```
+
+:computer:
+
+Los elementos HTML también pueden referirse a más de una clase.
+
+#### Ejemplo
+
+En este ejemplo, el elemento `<p>` se diseñará de acuerdo con `class = "center"` y a `class = "large"`: 
+
+```sh
+<p class="center large">This paragraph refers to two classes.</p>
+```
+
+:computer:
+
+**Nota:** ¡Un nombre de clase no puede comenzar con un número!
 
 ### El CSS Universal Selector
 
@@ -207,11 +256,11 @@ La siguiente regla CSS afectará a cada elemento HTML en la página:
 :computer:
 
 
-### El CSS Grouping Selector
+### El CSS Grouping Selector (Selector de Agrupación)
 
 El selector de agrupación selecciona todos los elementos HTML con las mismas definiciones de estilo.
 
-Mire el siguiente código CSS (los elementos h1, h2 y p tienen las mismas definiciones de estilo):
+Mire el siguiente código CSS (los elementos `h1`, `h2` y `p` tienen las mismas definiciones de estilo):
 
 ```css
 h1 {
@@ -244,20 +293,22 @@ h1, h2, p {
   color: red;
 }
 ```
+
 :computer:
 
-¡Ponte a prueba con ejercicios!
+### ¡Ponte a Prueba con Ejercicios!
+
 :computer: :computer: :computer: :computer:
 
-Todos CSS Simple Selectors
+### Todos CSS Simple Selectors
 
 Selector | Example | Example description
 ---------|---------|--------------------
-`.class` | `.intro` | Selects all elements with class="intro"
-`#id` | `#firstname` | Selects the element with id="firstname"
-`*` | `*` | Selects all elements
-`element` | `p` | Selects all <p> elements
-`element,element,..` | `div, p` | Selects all <div> elements and all <p> elements
+`.class` | `.intro` | Selecciona todos los elementos con class = "intro"
+`#id` | `#firstname` | Selecciona el elemento con id="firstname"
+`*` | `*` | Selecciona todos los elementos.
+`element` | `p` | Selecciona todos los elementos <p>
+`element,element,..` | `div, p` | Selecciona todos los elementos <div> y todos los elementos <p>
 
 
 ## CSS How To
