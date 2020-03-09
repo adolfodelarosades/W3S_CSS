@@ -802,8 +802,127 @@ Experimente mezclando los valores de HSLA a continuación:
 
 :computer:
 
-
 ## CSS Backgrounds
+
+<img src="images/1-bc-1.png">
+
+### CSS background-color
+
+La propiedad `background-color` especifica el color de fondo(background) de un elemento.
+
+#### Ejemplo
+
+El color de fondo de una página se establece así:
+
+```css
+body {
+  background-color: lightblue;
+}
+```
+
+:computer:
+
+Con CSS, un color se especifica con mayor frecuencia por:
+
+* un nombre de color válido, como `"red"`
+* un valor HEX - como `"#ff0000"`
+* un valor RGB, como `"rgb(255,0,0)"`
+Mire los [valores de color CSS](https://www.w3schools.com/cssref/css_colors_legal.asp) para obtener una lista completa de posibles valores de color.
+
+#### Ejemplo
+
+Aquí, los elementos `<h1>`, `<p>` y `<div>` tendrán diferentes colores de fondo: 
+
+```css
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
+```
+
+:computer:
+
+## CSS Background Image
+
+### CSS background-image
+
+La propiedad `background-image` especifica una imagen para usar como fondo de un elemento.
+
+Por defecto, la imagen se repite para que cubra todo el elemento.
+
+#### Ejemplo
+
+La imagen de fondo para una página se puede configurar así: 
+
+```css
+body {
+  background-image: url("paper.gif");
+}
+```
+
+:computer:
+
+#### Ejemplo
+
+Este ejemplo muestra una mala combinación de texto e imagen de fondo. El texto es difícil de leer: 
+
+```css
+body {
+  background-image: url("bgdesert.jpg");
+}
+```
+
+<img src="images/1-bi-1.png">
+
+:computer:
+
+**Nota**: Cuando use una imagen de fondo, use una imagen que no altere el texto.
+
+## CSS Background Repeat
+
+### CSS background-repeat
+
+Por defecto, la propiedad `background-image` repite una imagen tanto horizontal como verticalmente.
+
+Algunas imágenes deben repetirse solo horizontal o verticalmente, o se verán extrañas, así:
+
+#### Ejemplo
+
+```css
+body {
+  background-image: url("gradient_bg.png");
+}
+```
+
+<img src="images/1-bi-2.png">
+
+:computer:
+
+Si la imagen de arriba se repite solo horizontalmente (`background-repeat: repeat-x;`), el fondo se verá mejor:
+
+#### Ejemplo
+
+```css
+body {
+  background-image: url("gradient_bg.png");
+  background-repeat: repeat-x;
+}
+```
+
+<img src="images/1-bi-3.png">
+
+:computer:
+
+**Tip**: para repetir una imagen verticalmente, configure `background-repeat: repeat-y;`
+
+
 ## CSS Borders
 ## CSS Margins
 ## CSS Padding
