@@ -310,8 +310,193 @@ Selector | Example | Example description
 `element` | `p` | Selecciona todos los elementos <p>
 `element,element,..` | `div, p` | Selecciona todos los elementos <div> y todos los elementos <p>
 
+## Como Añadir CSS
 
-## CSS How To
+Cuando un navegador lee una hoja de estilo, formateará el documento HTML de acuerdo con la información en la hoja de estilo.
+
+Tres formas de insertar CSS
+Hay tres formas de insertar una hoja de estilo:
+
+CSS externo
+CSS interno
+CSS en línea
+CSS externo
+¡Con una hoja de estilo externa, puede cambiar el aspecto de un sitio web completo cambiando solo un archivo!
+
+Cada página HTML debe incluir una referencia al archivo de hoja de estilo externo dentro del elemento <link>, dentro de la sección de encabezado.
+
+Ejemplo
+Los estilos externos se definen dentro del elemento <link>, dentro de la sección <head> de una página HTML:
+
+```css
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+:computer:
+
+
+Se puede escribir una hoja de estilo externa en cualquier editor de texto y se debe guardar con una extensión .css.
+
+El archivo externo .css no debe contener ninguna etiqueta HTML.
+
+Así es como se ve el archivo "mystyle.css":
+
+#### "mystyle.css"
+
+```css
+body {
+  background-color: lightblue;
+}
+
+h1 {
+  color: navy;
+  margin-left: 20px;
+}
+```
+
+**Nota**: No agregue un espacio entre el valor de la propiedad y la unidad (como margin-left: 20 px;). La forma correcta es:margin-left: 20px;
+
+### CSS interno
+
+Se puede usar una hoja de estilo interna si una sola página HTML tiene un estilo único.
+
+El estilo interno se define dentro del elemento <style>, dentro de la sección del encabezado.
+
+#### Ejemplo
+
+Los estilos internos se definen dentro del elemento <style>, dentro de la sección <head> de una página HTML:
+  
+```css
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: linen;
+}
+
+h1 {
+  color: maroon;
+  margin-left: 40px;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+:computer:
+
+### CSS en línea
+Se puede usar un estilo en línea para aplicar un estilo único para un solo elemento.
+
+Para usar estilos en línea, agregue el atributo de estilo al elemento relevante. El atributo de estilo puede contener cualquier propiedad CSS.
+
+#### Ejemplo
+
+Los estilos en línea se definen dentro del atributo "estilo" del elemento relevante:
+
+```css
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 style="color:blue;text-align:center;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+</body>
+</html>
+```
+
+**Consejo**: Un estilo en línea pierde muchas de las ventajas de una hoja de estilo (al mezclar contenido con presentación). Use este método con moderación.
+
+### Múltiples hojas de estilo
+
+Si se han definido algunas propiedades para el mismo selector (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída. 
+
+Suponga que una hoja de estilo externa tiene el siguiente estilo para el elemento <h1>:
+
+
+```css
+h1 {
+  color: navy;
+}
+```
+
+Luego, suponga que una hoja de estilo interna también tiene el siguiente estilo para el elemento <h1>:
+  
+```css
+h1 {
+  color: orange;   
+}
+```
+
+#### Ejemplo
+Si el estilo interno se define después del enlace a la hoja de estilo externa, los elementos <h1> serán "naranjas":
+
+```css
+<head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<style>
+h1 {
+  color: orange;
+}
+</style>
+</head>
+```
+
+:computer:
+
+
+#### Ejemplo
+Sin embargo, si el estilo interno se define antes del enlace a la hoja de estilo externa, los elementos <h1> serán "azul marino": 
+  
+```css
+<head>
+<style>
+h1 {
+  color: orange;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+```
+
+:computer:
+
+### Orden en cascada
+
+¿Qué estilo se usará cuando haya más de un estilo especificado para un elemento HTML?
+
+Todos los estilos de una página se "encadenarán" en una nueva hoja de estilo "virtual" según las siguientes reglas, donde el número uno tiene la máxima prioridad:
+
+Estilo en línea (dentro de un elemento HTML)
+Hojas de estilo externas e internas (en la sección del encabezado)
+Navegador predeterminado
+Por lo tanto, un estilo en línea tiene la máxima prioridad y anulará los estilos externos e internos y los valores predeterminados del navegador.
+
+:computer:
+
+### ¡Ponte a prueba con ejercicios!
+
+:computer: :computer: :computer: :computer:
+
 ## CSS Comments
 ## CSS Colors
 ## CSS Backgrounds
