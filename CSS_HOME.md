@@ -640,6 +640,44 @@ Igual que el nombre de color `"Tomato"`, pero 50% transparente:
 
 :computer:
 
+## CSS RGB Colors
+
+### RGB Value
+
+En CSS, un color se puede especificar como un valor RGB, usando esta fórmula:
+
+**`rgb(red, green, blue)`**
+
+Cada parámetro (rojo, verde y azul) define la intensidad del color entre 0 y 255.
+
+Por ejemplo, rgb (255, 0, 0) se muestra en rojo, porque el rojo se establece en su valor más alto (255) y los demás se establecen en 0.
+
+Para mostrar el negro, establezca todos los parámetros de color en 0, de esta manera: rgb (0, 0, 0).
+
+Para mostrar el blanco, configure todos los parámetros de color en 255, así: rgb (255, 255, 255).
+
+Experimente mezclando los valores RGB a continuación:
+
+<img src="images/1-rgb-1.png">
+
+### Ejemplos
+
+<img src="images/1-rgb-2.png">
+
+:computer:
+
+Los tonos de gris a menudo se definen utilizando valores iguales para las 3 fuentes de luz:
+
+### Ejemplos
+
+<img src="images/1-rgb-3.png">
+
+:computer:
+*********************************
+### RGBA Value
+
+`rgba(red, green, blue, alpha)`
+
 ## CSS Backgrounds
 ## CSS Borders
 ## CSS Margins
