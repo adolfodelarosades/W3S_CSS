@@ -304,11 +304,11 @@ h1, h2, p {
 
 Selector | Example | Example description
 ---------|---------|--------------------
-`.class` | `.intro` | Selecciona todos los elementos con class = "intro"
-`#id` | `#firstname` | Selecciona el elemento con id="firstname"
+`.class` | `.intro` | Selecciona todos los elementos con `class = "intro"`
+`#id` | `#firstname` | Selecciona el elemento con `id="firstname"`
 `*` | `*` | Selecciona todos los elementos.
-`element` | `p` | Selecciona todos los elementos <p>
-`element,element,..` | `div, p` | Selecciona todos los elementos <div> y todos los elementos <p>
+`element` | `p` | Selecciona todos los elementos `<p>`
+`element,element,..` | `div, p` | Selecciona todos los elementos `<div>` y todos los elementos `<p>`
 
 ## Como Añadir CSS
 
@@ -375,11 +375,11 @@ h1 {
 
 Se puede usar una hoja de estilo interna si una sola página HTML tiene un estilo único.
 
-El estilo interno se define dentro del elemento <style>, dentro de la sección del encabezado.
+El estilo interno se define dentro del elemento `<style>`, dentro de la sección del encabezado.
 
 #### Ejemplo
 
-Los estilos internos se definen dentro del elemento <style>, dentro de la sección <head> de una página HTML:
+Los estilos internos se definen dentro del elemento `<style>`, dentro de la sección `<head> de una página HTML:
   
 ```css
 <!DOCTYPE html>
@@ -437,8 +437,7 @@ Los estilos inline se definen dentro del atributo `style` del elemento relevante
 
 Si se han definido algunas propiedades para el mismo selector (elemento) en diferentes hojas de estilo, se utilizará el valor de la última hoja de estilo leída. 
 
-Suponga que una **hoja de estilo externa** tiene el siguiente estilo para el elemento <h1>:
-
+Suponga que una **hoja de estilo externa** tiene el siguiente estilo para el elemento `<h1>`:
 
 ```css
 h1 {
@@ -446,7 +445,7 @@ h1 {
 }
 ```
 
-Luego, suponga que una **hoja de estilo interna** también tiene el siguiente estilo para el elemento <h1>:
+Luego, suponga que una **hoja de estilo interna** también tiene el siguiente estilo para el elemento `<h1>`:
   
 ```css
 h1 {
@@ -456,7 +455,7 @@ h1 {
 
 #### Ejemplo
 
-Si el estilo interno se define **después** del enlace a la hoja de estilo externa, los elementos <h1> serán "orange":
+Si el estilo interno se define **después** del enlace a la hoja de estilo externa, los elementos `<h1>` serán `"orange"`:
 
 ```css
 <head>
@@ -474,7 +473,7 @@ Si el estilo interno se define **después** del enlace a la hoja de estilo exter
 
 #### Ejemplo
 
-Sin embargo, si el estilo interno se define **antes** del enlace a la hoja de estilo externa, los elementos <h1> serán "navy": 
+Sin embargo, si el estilo interno se define **antes** del enlace a la hoja de estilo externa, los elementos `<h1>` serán `"navy": 
   
 ```css
 <head>
