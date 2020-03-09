@@ -336,12 +336,12 @@ Los estilos externos se definen dentro del elemento `<link>`, dentro de la secci
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
 
 </body>
 </html>
@@ -385,21 +385,21 @@ Los estilos internos se definen dentro del elemento <style>, dentro de la secci�
 <!DOCTYPE html>
 <html>
 <head>
-<style>
-body {
-  background-color: linen;
-}
+  <style>
+    body {
+      background-color: linen;
+    }
 
-h1 {
-  color: maroon;
-  margin-left: 40px;
-}
-</style>
+    h1 {
+      color: maroon;
+      margin-left: 40px;
+    }
+  </style>
 </head>
 <body>
 
-<h1>This is a heading</h1>
-<p>This is a paragraph.</p>
+  <h1>This is a heading</h1>
+  <p>This is a paragraph.</p>
 
 </body>
 </html>
@@ -407,23 +407,23 @@ h1 {
 
 :computer:
 
-### CSS en línea
+### CSS Inline
 
-Se puede usar un estilo en línea para aplicar un estilo único para un solo elemento.
+Se puede usar un estilo inline para aplicar un estilo único para un solo elemento.
 
-Para usar estilos en línea, agregue el atributo de estilo al elemento relevante. El atributo de estilo puede contener cualquier propiedad CSS.
+Para usar estilos inline, agregue el atributo `style` al elemento relevante. El atributo `style` puede contener cualquier propiedad CSS.
 
 #### Ejemplo
 
-Los estilos en línea se definen dentro del atributo "estilo" del elemento relevante:
+Los estilos inline se definen dentro del atributo `style` del elemento relevante:
 
 ```css
 <!DOCTYPE html>
 <html>
 <body>
 
-<h1 style="color:blue;text-align:center;">This is a heading</h1>
-<p style="color:red;">This is a paragraph.</p>
+  <h1 style="color:blue;text-align:center;">This is a heading</h1>
+  <p style="color:red;">This is a paragraph.</p>
 
 </body>
 </html>
@@ -431,7 +431,7 @@ Los estilos en línea se definen dentro del atributo "estilo" del elemento relev
 
 :computer:
 
-**Tip**: Un estilo en línea pierde muchas de las ventajas de una hoja de estilo (al mezclar contenido con presentación). Use este método con moderación.
+**Tip**: Un estilo inline pierde muchas de las ventajas de una hoja de estilo (al mezclar contenido con presentación). Use este método con moderación.
 
 ### Múltiples Hojas de Estilo (Style Sheets)
 
@@ -460,12 +460,12 @@ Si el estilo interno se define **después** del enlace a la hoja de estilo exter
 
 ```css
 <head>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
-<style>
-h1 {
-  color: orange;
-}
-</style>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+  <style>
+    h1 {
+      color: orange;
+    }
+  </style>
 </head>
 ```
 
@@ -478,12 +478,12 @@ Sin embargo, si el estilo interno se define **antes** del enlace a la hoja de es
   
 ```css
 <head>
-<style>
-h1 {
-  color: orange;
-}
-</style>
-<link rel="stylesheet" type="text/css" href="mystyle.css">
+  <style>
+    h1 {
+      color: orange;
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
 </head>
 ```
 
