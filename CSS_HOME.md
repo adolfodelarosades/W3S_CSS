@@ -506,7 +506,140 @@ Por lo tanto, un estilo en línea tiene la máxima prioridad y anulará los esti
 :computer: :computer: :computer: :computer:
 
 ## CSS Comments
+
+### Comentarios CSS
+
+Los comentarios se utilizan para explicar el código y pueden ser útiles cuando edite el código fuente en una fecha posterior.
+
+Los comentarios son ignorados por los navegadores.
+
+Un comentario CSS comienza con `/*` y termina con `*/`:
+
+#### Ejemplo
+
+```css
+/* This is a single-line comment */
+p {
+  color: red;
+}
+```
+
+:computer:
+
+Puedes agregar comentarios donde quieras en el código:
+
+#### Ejemplo
+
+```css
+p {
+  color: red;  /* Set text color to red */
+}
+```
+
+:computer:
+
+Los comentarios también pueden abarcar varias líneas: 
+
+#### Ejemplo
+
+```css
+/* This is
+a multi-line
+comment */
+
+p {
+  color: red;
+}
+```
+
+:computer:
+
 ## CSS Colors
+
+Los colores se especifican utilizando nombres de color predefinidos o valores RGB, HEX, HSL, RGBA, HSLA.
+
+### Nombres de color CSS
+
+En CSS, se puede especificar un color utilizando un nombre de color:
+
+<img src="images/1-css-color.png">
+
+:computer:
+
+CSS/HTML soporta [140 nombres de color standard](https://www.w3schools.com/colors/colors_names.asp).
+
+### CSS Background Color
+
+Puede establecer el color de fondo para los elementos HTML:
+
+<img src="images/1-background-color.png">
+
+#### Ejemplo
+
+```css
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">Lorem ipsum...</p>
+```
+
+:computer:
+
+### CSS Text Color
+
+Puedes configurar el color del texto:
+
+<img src="images/1-text-color.png">
+
+#### Ejemplo
+
+```css
+<h1 style="color:Tomato;">Hello World</h1>
+<p style="color:DodgerBlue;">Lorem ipsum...</p>
+<p style="color:MediumSeaGreen;">Ut wisi enim...</p>
+```
+
+:computer:
+
+### CSS Border Color
+
+Puede configurar el color de los bordes:
+
+<img src="images/1-border-color.png">
+
+#### Ejemplo
+
+```css
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+<h1 style="border:2px solid DodgerBlue;">Hello World</h1>
+<h1 style="border:2px solid Violet;">Hello World</h1>
+```
+
+:computer:
+
+### CSS Color Values
+
+En CSS, los colores también se pueden especificar utilizando valores RGB, valores HEX, valores HSL, valores RGBA y valores HSLA:
+
+Igual que el nombre de color `"Tomato"`:
+
+<img src="images/1-color-values.png">
+
+Igual que el nombre de color `"Tomato"`, pero 50% transparente:
+
+<img src="images/1-color-values-2.png">
+
+#### Ejemplo
+
+```css
+<h1 style="background-color:rgb(255, 99, 71);">...</h1>
+<h1 style="background-color:#ff6347;">...</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">...</h1>
+
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">...</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">...</h1>
+```
+
+:computer:
+
 ## CSS Backgrounds
 ## CSS Borders
 ## CSS Margins
