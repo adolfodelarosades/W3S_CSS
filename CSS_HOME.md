@@ -135,9 +135,7 @@ Ejemplo explicado
 * `color`es una propiedad y `red`es el valor de la propiedad
 * `text-align`es una propiedad y `center`es el valor de la propiedad
 
-## CSS Selectors
-
-### Selectores CSS
+## CSS Selectors (Selectores CSS)
 
 Los selectores CSS se utilizan para "encontrar" (o seleccionar) los elementos HTML que desea diseñar.
 
