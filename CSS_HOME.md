@@ -676,7 +676,132 @@ Los tonos de gris a menudo se definen utilizando valores iguales para las 3 fuen
 *********************************
 ### RGBA Value
 
-`rgba(red, green, blue, alpha)`
+Los valores de color RGBA son una extensión de los valores de color RGB con un canal alfa, que especifica la opacidad de un color.
+
+Un valor de color RGBA se especifica con:
+
+**`rgba(red, green, blue, alpha)`**
+
+El parámetro alfa es un número entre 0.0 (totalmente transparente) y 1.0 (no transparente en absoluto):
+
+Experimente mezclando los valores de RGBA a continuación:
+
+<img src="images/1-rgb-4.png">
+
+#### Ejemplo:
+
+<img src="images/1-rgb-5.png">
+
+:computer:
+
+## CSS HEX Colors
+
+### HEX Value
+
+En CSS, se puede especificar un color usando un valor hexadecimal en la forma:
+
+**`#rrggbb`**
+
+Donde rr (red), gg (green) y bb (blue) son valores hexadecimales entre 00 y ff (decimales entre 0-255).
+
+Por ejemplo, `#ff0000` se muestra en rojo, porque el rojo se establece en su valor más alto (ff) y los demás se configuran en el valor más bajo (00).
+
+Experimente mezclando los valores HEX a continuación:
+
+<img src="images/1-hex-1.png">
+
+### Ejemplo
+
+<img src="images/1-hex-2.png">
+
+:computer:
+
+Los tonos de gris a menudo se definen utilizando valores iguales para las 3 fuentes de luz:
+
+#### Ejemplo
+
+<img src="images/1-hex-3.png">
+
+:computer:
+
+## CSS HSL Colors
+
+### HSL Value
+
+En CSS, se puede especificar un color usando hue (matiz), saturation (saturación), y lightnessmatiz (luminosidad),  (HSL) en la forma:
+
+**`hsl(hue, saturation, lightness)`**
+
+Hue es un grado en la rueda de color de 0 a 360. 0 es red, 120 es green y 240 es blue.
+
+Saturation es un valor porcentual, 0% significa un tono de gris y 100% es el color completo.
+
+Lightness también es un porcentaje, el 0% es negro, el 50% no es claro ni oscuro, el 100% es blanco
+
+Experimente mezclando los valores de HSL a continuación:
+
+<img src="images/1-hsl-1.png">
+
+#### Ejemplo
+
+<img src="images/1-hsl-2.png">
+
+:computer:
+
+#### Saturation
+
+La saturación se puede describir como la intensidad de un color.
+
+100% es color puro, sin tonos de gris
+
+50% es 50% gris, pero aún puede ver el color.
+
+0% es completamente gris, ya no puede ver el color.
+
+#### Ejemplo
+
+<img src="images/1-hsl-3.png">
+
+:computer:
+
+#### Lightness
+
+La claridad de un color puede describirse como la cantidad de luz que desea dar al color, donde 0% significa que no hay luz (negro), 50% significa 50% de luz (ni oscura ni clara) 100% significa claridad total (blanco).
+
+#### Ejemplo
+
+<img src="images/1-hsl-4.png">
+
+:computer:
+
+Los tonos de gris a menudo se definen estableciendo el tono y la saturación en 0, y ajustando la claridad del 0% al 100% para obtener tonos más oscuros / claros:
+
+#### Ejemplo
+
+<img src="images/1-hsl-5.png">
+
+:computer:
+
+### HSLA Value
+
+Los valores de color HSLA son una extensión de los valores de color HSL con un canal alfa, que especifica la opacidad de un color.
+
+Un valor de color HSLA se especifica con:
+
+**`hsla(hue, saturation, lightness, alpha)`**
+
+El parámetro alfa es un número entre 0.0 (totalmente transparente) y 1.0 (no transparente en absoluto):
+
+Experimente mezclando los valores de HSLA a continuación:
+
+<img src="images/1-hsl-6.png">
+
+#### Ejemplo
+
+<img src="images/1-hsl-7.png">
+
+:computer:
+
 
 ## CSS Backgrounds
 ## CSS Borders
