@@ -470,10 +470,9 @@ Si el estilo interno se define **después** del enlace a la hoja de estilo exter
 
 :computer:
 
-
 #### Ejemplo
 
-Sin embargo, si el estilo interno se define **antes** del enlace a la hoja de estilo externa, los elementos `<h1>` serán `"navy": 
+Sin embargo, si el estilo interno se define **antes** del enlace a la hoja de estilo externa, los elementos `<h1>` serán `"navy"`: 
   
 ```css
 <head>
