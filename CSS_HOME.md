@@ -1649,7 +1649,94 @@ p {
 
 <img src="images/1-margin-11.png">
 
-### The auto Value
+### El Valor `auto` 
+
+Puede establecer la propiedad de margen `auto` para centrar horizontalmente el elemento dentro de su contenedor.
+
+El elemento ocupará el ancho especificado y el espacio restante se dividirá en partes iguales entre los márgenes izquierdo y derecho.
+
+#### Ejemplo
+
+Uso margen: `auto:
+
+```css
+div {
+  width: 300px;
+  margin: auto;
+  border: 1px solid red;
+}
+```
+
+:computer:
+
+<img src="images/1-margin-12.png">
+
+### El Valor `inherit`
+
+Este ejemplo permite que el left margin del elemento `<p class="ex1">` se herede del elemento padre (`<div>`):
+
+#### Ejemplo
+
+Uso del valor `inherit`:
+
+```css
+div {
+  border: 1px solid red;
+  margin-left: 100px;
+}
+
+p.ex1 {
+  margin-left: inherit;
+}
+```
+
+:computer:
+
+<img src="images/1-margin-13.png">
+
+### Margin Collapse
+
+Los márgenes superior e inferior de los elementos a veces se contraen en un único margen que es igual al mayor de los dos márgenes.
+
+¡Esto no sucede en los márgenes izquierdo y derecho! ¡Solo márgenes superior e inferior!
+
+Mira el siguiente ejemplo:
+
+#### Ejemplo
+
+Demostración de margin collapse:
+
+```css
+h1 {
+  margin: 0 0 50px 0;
+}
+
+h2 {
+  margin: 20px 0 0 0;
+}
+```
+
+:computer:
+
+<img src="images/1-margin-14.png">
+
+En el ejemplo anterior, el elemento `<h1>` tiene un margen inferior de `50px` y el elemento `<h2>` tiene un margen superior establecido en `20px`.
+
+El sentido común parecería sugerir que el margen vertical entre `<h1>` y `<h2>` sería un total de `70px` (`50px` + `20px`). Pero debido al margin collapse, el margen real termina siendo `50px`.
+
+### ¡Ponte a prueba con ejercicios!
+
+:computer: :computer: :computer: :computer:
+
+### Todas las Propiedades CSS Margin
+
+Propiedad | Descripción
+----------|------------
+margin | Una propiedad abreviada para establecer las propiedades de margin en una declaración
+margin-bottom | Establece el bottom margin de un elemento
+margin-left | Establece el left margin de un elemento
+margin-right | Establece el right margin de un elemento
+margin-top | Establece el top margin de un elemento
 
 ## CSS Padding
 ## CSS Height/Width
