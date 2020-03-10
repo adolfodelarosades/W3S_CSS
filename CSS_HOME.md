@@ -1429,6 +1429,75 @@ Resultado:
 
 <img src="images/1-border-20.png">
 
+## CSS Rounded Borders
+
+### CSS Rounded Borders
+
+La propiedad `border-radius` se usa para agregar bordes redondeados a un elemento: 
+
+<img src="images/1-border-21.png">
+
+#### Ejemplo
+
+```css
+p {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+```
+
+:computer:
+
+<img src="images/1-border-22.png">
+
+### Más ejemplos
+
+[Todas las propiedades del borde superior en una declaración]()
+Este ejemplo demuestra una propiedad abreviada para establecer todas las propiedades para el borde superior en una declaración.
+
+[Establecer el estilo del borde inferior]()
+Este ejemplo muestra cómo establecer el estilo del borde inferior.
+
+[Establecer el ancho del borde izquierdo]()
+Este ejemplo muestra cómo establecer el ancho del borde izquierdo.
+
+[Establecer el color de los cuatro bordes]()
+Este ejemplo muestra cómo establecer el color de los cuatro bordes. Puede tener de uno a cuatro colores.
+
+[Establecer el color del borde derecho]()
+Este ejemplo muestra cómo establecer el color del borde derecho.
+
+### ¡Ponte a prueba con ejercicios!
+
+:computer: :computer: :computer: :computer:
+
+### Todas las Propiedades CSS Border
+
+Propiedades |	Descripción
+------------|------------
+border | Sets all the border properties in one declaration
+border-bottom | Sets all the bottom border properties in one declaration
+border-bottom-color | Sets the color of the bottom border
+border-bottom-style | Sets the style of the bottom border
+border-bottom-width | Sets the width of the bottom border
+border-color | Sets the color of the four borders
+border-left | Sets all the left border properties in one declaration
+border-left-color | Sets the color of the left border
+border-left-style | Sets the style of the left border
+border-left-width | Sets the width of the left border
+border-radius | Sets all the four border-*-radius properties for rounded corners
+border-right | Sets all the right border properties in one declaration
+border-right-color | Sets the color of the right border
+border-right-style | Sets the style of the right border
+border-right-width | Sets the width of the right border
+border-style | Sets the style of the four borders
+border-top | Sets all the top border properties in one declaration
+border-top-color | Sets the color of the top border
+border-top-style | Sets the style of the top border
+border-top-width | Sets the width of the top border
+border-width | Sets the width of the four borders
+
+
 ## CSS Margins
 ## CSS Padding
 ## CSS Height/Width
