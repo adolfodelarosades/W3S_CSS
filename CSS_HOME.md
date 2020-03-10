@@ -1056,6 +1056,122 @@ background-repeat | Indicar como una imagen background rerá repetida
 background-size | Especificar el tamaño de imagen(es) background
 
 ## CSS Borders
+
+### CSS Border Properties
+
+Las propiedades CSS `border` le permiten especificar el estilo, el ancho y el color del borde de un elemento.
+
+<img src="images/1-border-1.png">
+
+### CSS Border Style
+
+La propiedad `border-style` especifica qué tipo de borde mostrar.
+
+Se permiten los siguientes valores:
+
+* `dotted` - Define un dotted border
+* `dashed` - Define un  dashed border
+* `solid` - Define un  solid border
+* `double` - Define un double border
+* `groove` - Define un 3D grooved border. El efecto depende del valor de `border-color`.
+* `ridge` - Define un 3D ridged border. El efecto depende del valor de `border-color`.
+* `inset` - Define un 3D inset border. El efecto depende del valor de `border-color`.
+* `outset` - Define un 3D outset border. El efecto depende del valor de `border-color`.
+* `none` - Define no border
+* `hidden` - Define un hidden border
+
+La propiedad `border-style` puede tener de uno a cuatro valores (para el top border, right border, bottom border, y el left border).
+
+#### Ejemplo
+
+Demostración de los diferentes estilos de borde:
+
+```css
+p.dotted {border-style: dotted;}
+p.dashed {border-style: dashed;}
+p.solid {border-style: solid;}
+p.double {border-style: double;}
+p.groove {border-style: groove;}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+```
+
+<img src="images/1-border-2.png">
+
+**Nota**: ¡Ninguna de las OTRAS propiedades de borde CSS (de las que aprenderá más en los próximos capítulos) tendrá NINGÚN efecto a menos que se establezca la propiedad `border-style`!
+
+## CSS Border Width
+
+### CSS Border Width
+
+La propiedad `border-width` especifica el ancho de los cuatro bordes.
+
+El ancho se puede establecer como un tamaño específico (in px, pt, cm, em, etc.) o mediante el uso de uno de los tres valores predefinidos: thin, medium, o thick:
+
+#### Ejemplo
+
+Demostración de los diferentes anchos de borde:
+
+```css
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+```
+
+<img src="images/1-border-3.png">
+
+<img src="images/1-border-4.png">
+
+:computer:
+
+### Especificar Side Widths
+
+La propiedad `border-width` puede tener de uno a cuatro valores (para el top border, right border, bottom border, y el left border):
+
+Ejemplo:
+
+```css
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px top and bottom, 20px on the sides */
+}
+
+p.two {
+  border-style: solid;
+  border-width: 20px 5px; /* 20px top and bottom, 5px on the sides */
+}
+
+p.three {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px top, 10px right, 4px bottom and 35px left
+}
+```
+
+<img src="images/1-border-5.png">
+
+:computer:
+
+
 ## CSS Margins
 ## CSS Padding
 ## CSS Height/Width
