@@ -1739,6 +1739,199 @@ margin-right | Establece el right margin de un elemento
 margin-top | Establece el top margin de un elemento
 
 ## CSS Padding
+
+<img src="images/1-padding-1.png">
+
+:computer:
+
+### CSS Padding
+
+Las propiedades CSS `padding` se utilizan para generar espacio alrededor del contenido de un elemento, dentro de cualquier borde definido.
+
+Con CSS, tienes control total sobre el relleno. Hay propiedades para configurar el relleno para cada lado de un elemento (top, right, bottom y left).
+
+### Padding - Individual Sides
+
+CSS tiene propiedades para especificar el padding para cada lado de un elemento:
+
+* padding-top
+* padding-right
+* padding-bottom
+* padding-left
+
+Todas las propiedades padding pueden tener los siguientes valores:
+
+* **length** - especifica un padding en px, pt, cm, etc.
+* **%** - especifica un padding en % del ancho del elemento contenedor
+* **inherit** - especifica que el padding debe heredarse del elemento padre
+
+**Nota**: los valores negativos no están permitidos.
+
+#### Ejemplo
+
+#### Ejemplo
+
+Establezca un padding diferente para los cuatro lados de un elemento `<div>`:  
+
+```css
+div {
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+}
+```
+
+:computer:
+
+<img src="images/1-padding-2.png">
+
+### Padding - Shorthand Property
+
+Para acortar el código, es posible especificar todas las propiedades padding en una propiedad.
+
+La propiedad `padding` es una propiedad abreviada de las siguientes propiedades padding individuales:
+
+* padding-top
+* padding-right
+* padding-bottom
+* padding-left
+
+Pues así es como funciona:
+
+Si la propiedad `padding` tiene cuatro valores:
+
+* **padding: 25px 50px 75px 100px;**
+   * top padding es 25px
+   * right padding es 50px
+   * bottom padding es 75px
+   * left padding es 100px
+   
+#### Ejemplo
+
+Utilice la propiedad recortada padding con cuatro valores:
+
+```css
+div {
+  padding: 25px 50px 75px 100px;
+}
+```
+
+:computer:
+
+<img src="images/1-padding-3.png">
+
+Si la propiedad padding tiene tres valores:
+
+* **padding: 25px 50px 75px;**
+   * top padding es 25px
+   * right y left paddings son 50px
+   * bottom padding es 75px
+   
+#### Ejemplo
+
+Utilice la propiedad recortada padding con tres valores: 
+
+```css
+div {
+  padding: 25px 50px 75px;
+}
+```
+
+:computer:
+
+<img src="images/1-padding-4.png">
+
+Si la propiedad padding tiene dos valores:
+
+* **padding: 25px 50px;**
+   * top y bottom paddings son 25px
+   * right y left paddings son 50px
+
+#### Ejemplo
+
+Use la propiedad recortada padding con dos valores: 
+
+```css
+div {
+  padding: 25px 50px;
+}
+```
+
+:computer:
+
+<img src="images/1-padding-5.png">
+
+Si la propiedad padding tiene un valor:
+
+* **padding: 25px;**
+   * todos los cuatro paddings son 25px
+
+#### Ejemplo
+
+Utilice la propiedad recortada padding con un valor: 
+
+```css
+div {
+  padding: 25px;
+}
+```
+
+:computer:
+
+<img src="images/1-padding-6.png">
+
+### Padding y Elemento Width
+
+La propiedad CSS width especifica el ancho del área de contenido del elemento. El área de contenido es la porción dentro del padding, border y margin de un elemento [el box model](https://www.w3schools.com/css/css_boxmodel.asp).
+
+Entonces, si un elemento tiene un ancho específico, el padding agregado a ese elemento se agregará al ancho total del elemento. Esto es a menudo un resultado indeseable.
+
+#### Ejemplo
+
+Aquí, el elemento `<div>` tiene un ancho de `300px`. Sin embargo, el ancho real del elemento `<div>` será de `350px` (`300px` + `25px` de left padding + `25px` de right padding):
+
+```css
+div {
+  width: 300px;
+  padding: 25px;
+}
+```
+:computer:
+
+To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its width; if you increase the padding, the available content space will decrease.
+
+Example
+Use the box-sizing property to keep the width at 300px, no matter the amount of padding:
+
+div {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+}
+More Examples
+Set the left padding
+This example demonstrates how to set the left padding of a <p> element.
+
+Set the right padding
+This example demonstrates how to set the right padding of a <p> element.
+
+Set the top padding
+This example demonstrates how to set the top padding of a <p> element.
+
+Set the bottom padding
+This example demonstrates how to set the bottom padding of a <p> element.
+
+Test Yourself with Exercises!
+All CSS Padding Properties
+Property	Description
+padding	A shorthand property for setting all the padding properties in one declaration
+padding-bottom	Sets the bottom padding of an element
+padding-left	Sets the left padding of an element
+padding-right	Sets the right padding of an element
+padding-top	Sets the top padding of an element
+
+
 ## CSS Height/Width
 ## CSS Box Model
 ## CSS Outline
