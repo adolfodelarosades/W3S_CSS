@@ -1934,8 +1934,6 @@ Este ejemplo muestra cómo configurar el top padding de un elemento `<p>`.
 [Establecer el bottom padding](https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-bottom)
 Este ejemplo muestra cómo configurar el bottom padding de un elemento `<p>`.
   
-  
-
 ### ¡Ponte a prueba con ejercicios!
 
 :computer: :computer: :computer:
@@ -1951,6 +1949,121 @@ padding-right | Establece el right padding de un elemento
 padding-top	| Establece el top padding de un elemento
 
 ## CSS Height/Width
+
+<img src="images/1-width-1.png">
+
+### CSS Setting height and width
+
+Las propiedades `height` y `width` se utilizan para establecer el alto y el ancho de un elemento.
+
+Las propiedades `height` y `width` no incluyen padding, borders o margins. Establece el height/width del área dentro del padding, el border y el margin del elemento.
+
+CSS height/width Values
+
+Las propiedades `height` y `width`pueden tener los siguientes valores:
+
+* `auto`- Esto es por default. El navegador calcula height y width.
+* `length` - Define height/width en px, cm etc.
+* `%` - Define height/width en porcentaje del bloque contenedor
+* `initial` - Establece height/width a su valor predeterminado
+* `inherit` - La height/width se heredará de su valor padre
+
+### Ejemplos CSS height/width
+
+<img src="images/1-width-2.png">
+
+#### Ejemplo
+
+Establezca el height y width de un elemento `<div>`:
+
+```css
+div {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+```
+
+:computer:
+
+<img src="images/1-width-3.png">
+
+#### Ejemplo
+
+Establezca el height y width de otro elemento `<div>`:
+
+```css
+div {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+```
+
+:computer:
+
+**Nota:** ¡Recuerde que las propiedades `height` y `width` no incluyen padding, borders, o margins! ¡Establecen la height/width del área dentro del padding, border y margin del elemento!
+
+### Setting max-width
+
+La propiedad `max-width` se usa para establecer el ancho máximo de un elemento.
+
+La propiedad `max-width` puede especificarse como *valores de longitud* px, cm, etc., o en porcentaje(%) del containing block, o establecido a none  (esto es predeterminado. Significa que no hay un ancho máximo).
+
+El problema con lo `<div>` anterior ocurre cuando la ventana del navegador es más pequeña que el ancho del elemento (500px). El navegador luego agrega una barra de desplazamiento horizontal a la página.
+
+Usando `max-width` en lugar, en esta situación, mejorará el manejo del navegador de ventanas pequeñas.
+
+**Tip:** Arrastre la ventana del navegador a un ancho menor de 500 px para ver la diferencia entre los dos divs.
+
+<img src="images/1-width-4.png">
+
+**Nota:** El valor de la propiedad `max-width` overrides `width` (sobreescribe width).
+
+#### Ejemplo
+
+Este elemento `<div>` tiene un height de 100 píxeles y un max-width de 500 píxeles: 
+
+```css
+div {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+```
+
+:computer:
+
+### Pruébelo usted mismo - Ejemplos
+
+[Establecer la altura y el ancho de los elementos](https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height)
+Este ejemplo muestra cómo establecer la altura y el ancho de diferentes elementos.
+
+[Establecer el alto y el ancho de una imagen usando el porcentaje](https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_height_percent)
+Este ejemplo muestra cómo establecer el alto y el ancho de una imagen usando un valor de porcentaje.
+
+[Establecer el ancho mínimo y el ancho máximo de un elemento](https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-width)
+Este ejemplo muestra cómo establecer un ancho mínimo y un ancho máximo de un elemento utilizando un valor de píxel.
+
+[Establecer altura mínima y altura máxima de un elemento](https://www.w3schools.com/css/tryit.asp?filename=trycss_dim_max-height)
+Este ejemplo muestra cómo establecer una altura mínima y una altura máxima de un elemento utilizando un valor de píxel.
+
+### ¡Ponte a prueba con ejercicios!
+
+:computer: :computer: 
+
+### Todas las Propiedades CSS Dimension
+
+
+Propiedad | Descripción
+----------|------------
+height | Establece la height de un elemento
+max-height | Establece la maximum height de un elemento
+max-width | Establece la maximum width de un elemento
+min-height | Establece la minimum height de un elemento
+min-width | Establece la minimum width de un elemento
+width | Establece la width de un elemento
+
 ## CSS Box Model
 ## CSS Outline
 ## CSS Text
