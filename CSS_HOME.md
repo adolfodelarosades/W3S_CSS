@@ -1897,40 +1897,58 @@ div {
   padding: 25px;
 }
 ```
+
 :computer:
 
-To keep the width at 300px, no matter the amount of padding, you can use the box-sizing property. This causes the element to maintain its width; if you increase the padding, the available content space will decrease.
+<img src="images/1-padding-7.png">
 
-Example
-Use the box-sizing property to keep the width at 300px, no matter the amount of padding:
+Para mantener el ancho a `300px`, sin importar la cantidad de padding, puede usar la propiedad box-sizing. Esto hace que el elemento mantenga su ancho; Si aumenta el padding, el espacio de contenido disponible disminuirá.
 
+#### Ejemplo
+
+Use la propiedad box-sizing para mantener el ancho a `300px`, sin importar la cantidad de padding:
+
+```cs
 div {
   width: 300px;
   padding: 25px;
   box-sizing: border-box;
 }
-More Examples
-Set the left padding
-This example demonstrates how to set the left padding of a <p> element.
+```
 
-Set the right padding
-This example demonstrates how to set the right padding of a <p> element.
+:computer:
 
-Set the top padding
-This example demonstrates how to set the top padding of a <p> element.
+<img src="images/1-padding-8.png">
 
-Set the bottom padding
-This example demonstrates how to set the bottom padding of a <p> element.
+### Más ejemplos
 
-Test Yourself with Exercises!
-All CSS Padding Properties
-Property	Description
-padding	A shorthand property for setting all the padding properties in one declaration
-padding-bottom	Sets the bottom padding of an element
-padding-left	Sets the left padding of an element
-padding-right	Sets the right padding of an element
-padding-top	Sets the top padding of an element
+[Establecer el left padding](https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-left)
+Este ejemplo muestra cómo configurar el left padding de un elemento `<p>`.
 
+[Establecer el right padding](https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-right)
+Este ejemplo muestra cómo establecer el right padding de un elemento `<p>`.
+
+[Establecer el top padding](https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-top)
+Este ejemplo muestra cómo configurar el top padding de un elemento `<p>`.
+
+[Establecer el bottom padding](https://www.w3schools.com/css/tryit.asp?filename=trycss_padding-bottom)
+Este ejemplo muestra cómo configurar el bottom padding de un elemento `<p>`.
+  
+  
+
+### ¡Ponte a prueba con ejercicios!
+
+:computer: :computer: :computer:
+
+Todas las Propiedades CSS Padding
+
+Propiedad | Descripción
+----------|------------
+padding | Una propiedad abreviada para configurar todas las propiedades padding en una declaración
+padding-bottom | Establece el bottom padding de un elemento
+padding-left | Establece el left padding de un elemento
+padding-right | Establece el right padding de un elemento
+padding-top	| Establece el top padding de un elemento
 
 ## CSS Height/Width
 ## CSS Box Model
