@@ -1171,6 +1171,211 @@ p.three {
 
 :computer:
 
+## CSS Border Color
+
+### CSS Border Color
+
+La propiedad `border-color` se utiliza para establecer el color de los cuatro bordes.
+
+El color puede ser establecido por:
+
+* **name** - especifique un nombre de color, como "red"
+* **HEX** - especifique un HEX value, como "#ff0000"
+* **RGB** - especifique un RGB value, como "rgb(255,0,0)"
+* **HSL** - especifique un HSL value, como "hsl(0, 100%, 50%)"
+* **transparent**
+
+**Nota**: Si no se establece el color del borde, hereda el color del elemento.
+
+#### Ejemplo
+
+Demostración de los diferentes colores del borde:
+
+```css
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two {
+  border-style: solid;
+  border-color: green;
+}
+
+p.three {
+  border-style: dotted;
+  border-color: blue;
+}
+```
+
+<img src="images/1-border-6.png">
+
+<img src="images/1-border-7.png">
+
+:computer:
+
+### Especificar Side Colors
+
+La propiedad `border-color` puede tener de uno a cuatro valores (para el top border, right border, bottom border, y el left border). 
+
+Ejemplo
+
+```css
+p.one {
+  border-style: solid;
+  border-color: red green blue yellow; /* red top, green right, blue bottom and yellow left */
+}
+```
+
+<img src="images/1-border-8.png">
+
+:computer:
+
+
+### HEX Values
+
+El color del borde también se puede especificar utilizando un valor hexadecimal (HEX):
+
+Ejemplo
+
+```css
+p.one {
+  border-style: solid;
+  border-color: #ff0000; /* red */
+}
+```
+
+<img src="images/1-border-9.png">
+
+:computer:
+
+### RGB Values
+
+Usando valores RGB:
+
+#### Ejemplo
+
+```css
+p.one {
+  border-style: solid;
+  border-color: rgb(255, 0, 0); /* red */
+}
+```
+
+<img src="images/1-border-10.png">
+
+:computer:
+
+### HSL Values
+
+También puede usar valores HSL:
+
+```css
+p.one {
+  border-style: solid;
+  border-color: hsl(0, 100%, 50%); /* red */
+}
+```
+
+<img src="images/1-border-11.png">
+
+:computer:
+
+## CSS Border Sides
+
+### CSS Border - Individual Sides
+
+En los ejemplos de las páginas anteriores, ha visto que es posible especificar un borde diferente para cada lado.
+
+En CSS, también hay propiedades para especificar cada uno de los bordes (top, right, bottom y left):
+
+#### Ejemplo
+
+```css
+p {
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+```
+<img src="images/1-border-12.png">
+
+<img src="images/1-border-13.png">
+
+:computer:
+
+El ejemplo anterior da el mismo resultado que este:
+
+#### Ejemplo
+
+```css
+p {
+  border-style: dotted solid;
+}
+```
+
+<img src="images/1-border-13.png">
+
+:computer:
+
+Pues así es como funciona:
+
+Si la propiedad `border-style` tiene cuatro valores:
+
+* estilo de borde: punteado sólido de doble trazo;
+   * el borde superior está punteado
+   * el borde derecho es sólido
+   * el borde inferior es doble
+   * el borde izquierdo está discontinuo
+
+Si la propiedad `border-style` tiene tres valores:
+
+* estilo de borde: doble punteado sólido;
+   * el borde superior está punteado
+   * los bordes derecho e izquierdo son sólidos
+   * el borde inferior es doble
+   
+Si la border-stylepropiedad tiene dos valores:
+
+* estilo de borde: sólido punteado;
+   * los bordes superior e inferior están punteados
+   * los bordes derecho e izquierdo son sólidos
+
+Si la border-stylepropiedad tiene un valor:
+
+* estilo de borde: punteado;
+   * los cuatro bordes están punteados
+
+#### Ejemplo
+
+```css
+/* Four values */
+p {
+  border-style: dotted solid double dashed;
+}
+
+/* Three values */
+p {
+  border-style: dotted solid double;
+}
+
+/* Two values */
+p {
+  border-style: dotted solid;
+}
+
+/* One value */
+p {
+  border-style: dotted;
+}
+```
+
+<img src="images/1-border-14.png">
+
+:computer:
+
+La propiedad `border-style` se usa en el ejemplo anterior. Sin embargo, también funciona con `border-width` y `border-color`.
 
 ## CSS Margins
 ## CSS Padding
