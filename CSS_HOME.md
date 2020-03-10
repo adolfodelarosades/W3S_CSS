@@ -1007,6 +1007,53 @@ body {
 
 ### CSS Background Shorthand
 
+#### CSS background - Shorthand property
+
+Para acortar el código, también es posible especificar todas las propiedades de fondo en una sola propiedad. Esto se llama propiedad abreviada.
+
+La propiedad abreviada para el fondo es background.
+
+#### Ejemplo
+
+Use la propiedad abreviada para establecer todas las propiedades de fondo en una declaración:
+
+```css
+body {
+  background: #ffffff url("img_tree.png") no-repeat right top;
+}
+```
+
+:computer:
+
+<img src="images/1-bi-9.png">
+
+Cuando se utiliza la propiedad abreviada, el orden de los valores de la propiedad es:
+
+* background-color
+* background-image
+* background-repeat
+* background-attachment
+* background-position
+
+No importa si falta uno de los valores de propiedad, siempre que los otros estén en este orden.
+
+### ¡Ponte a prueba con ejercicios!
+
+:computer: :computer: :computer: :computer:
+
+Todas las Propiedades CSS Background
+
+Propiedad | Descripción
+----------|------------
+background | Establece todas las propiedades background en una declaración
+background-attachment | Establece si una imagen background es fija o se desplaza con el resto de la página
+background-clip | Especifica el área de pintura del background
+background-color | Establece el color de background de un elemento
+background-image | Colocar la imagen background para un elemento
+background-origin | Especificar donde la(s) imagen(es) es/son posicionadas
+background-position | Colocar la posición inicial de imagen background
+background-repeat | Indicar como una imagen background rerá repetida
+background-size | Especificar el tamaño de imagen(es) background
 
 ## CSS Borders
 ## CSS Margins
