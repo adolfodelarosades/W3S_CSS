@@ -1323,29 +1323,29 @@ Pues así es como funciona:
 
 Si la propiedad `border-style` tiene cuatro valores:
 
-* estilo de borde: punteado sólido de doble trazo;
-   * el borde superior está punteado
-   * el borde derecho es sólido
-   * el borde inferior es doble
-   * el borde izquierdo está discontinuo
+* **border-style: dotted solid double dashed;**
+   * top border es dotted
+   * right border es solid
+   * bottom border es double
+   * left border es dashed
 
 Si la propiedad `border-style` tiene tres valores:
 
-* estilo de borde: doble punteado sólido;
-   * el borde superior está punteado
-   * los bordes derecho e izquierdo son sólidos
-   * el borde inferior es doble
+* **border-style: dotted solid double;**
+   * top border es dotted
+   * right y left borders son solid
+   * bottom border es double
    
-Si la border-stylepropiedad tiene dos valores:
+Si la propiedad `border-style`tiene dos valores:
 
-* estilo de borde: sólido punteado;
-   * los bordes superior e inferior están punteados
-   * los bordes derecho e izquierdo son sólidos
+* **border-style: dotted solid;**
+   * top y bottom borders son dotted
+   * right y left borders son solid
 
-Si la border-stylepropiedad tiene un valor:
+Si la propiedad `border-style` tiene un valor:
 
-* estilo de borde: punteado;
-   * los cuatro bordes están punteados
+* **border-style: dotted;**
+   * los cuatro borders son dotted
 
 #### Ejemplo
 
