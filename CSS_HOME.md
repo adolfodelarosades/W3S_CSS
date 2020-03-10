@@ -922,6 +922,91 @@ body {
 
 **Tip**: para repetir una imagen verticalmente, configure `background-repeat: repeat-y;`
 
+### CSS background-repeat: no-repeat
+
+Mostrar la imagen de fondo solo una vez también está especificado por la propiedad `background-repeat`:
+
+#### Ejemplo
+
+Mostrar la imagen de fondo solo una vez:
+
+```css
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+}
+```
+
+:computer:
+
+<img src="images/1-bi-4.png">
+
+En el ejemplo anterior, la imagen de fondo se coloca en el mismo lugar que el texto. Queremos cambiar la posición de la imagen, para que no altere demasiado el texto.
+
+### CSS background-position
+
+La propiedad `background-position` se utiliza para especificar la posición de la imagen de fondo.
+
+#### Ejemplo
+
+Coloque la imagen de fondo en la esquina superior derecha: 
+
+```css
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+```
+
+:computer:
+
+<img src="images/1-bi-5.png">
+
+## CSS Background Attachment
+
+### CSS background-attachment
+
+La propiedad `background-attachment` especifica si la imagen de fondo debe desplazarse o estar fija (no se desplazará con el resto de la página):
+
+#### Ejemplo
+
+Especifique que la imagen de fondo debe estar fija:
+
+```css
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: fixed;
+}
+```
+
+:computer:
+
+<img src="images/1-bi-6.png">
+
+<img src="images/1-bi-7.png">
+
+#### Ejemplo
+
+Especifique que la imagen de fondo debe desplazarse con el resto de la página:
+
+```css
+body {
+  background-image: url("img_tree.png");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-attachment: scroll;
+}
+```
+
+:computer:
+
+<img src="images/1-bi-8.png">
+
+### CSS Background Shorthand
+
 
 ## CSS Borders
 ## CSS Margins
