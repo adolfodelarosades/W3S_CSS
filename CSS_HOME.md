@@ -211,7 +211,7 @@ En este ejemplo, todos los elementos HTML con `class = "center"` serán rojos y 
 
 También puede especificar que solo los elementos HTML específicos se vean afectados por una clase.
 
-#### Ejemplo
+#### Ejemplo
 
 En este ejemplo, solo los elementos `<p>` con `class = "center"` estarán alineados al centro: 
 
@@ -660,7 +660,7 @@ Experimente mezclando los valores RGB a continuación:
 
 <img src="images/1-rgb-1.png">
 
-### Ejemplos
+#### Ejemplos
 
 <img src="images/1-rgb-2.png">
 
@@ -668,7 +668,7 @@ Experimente mezclando los valores RGB a continuación:
 
 Los tonos de gris a menudo se definen utilizando valores iguales para las 3 fuentes de luz:
 
-### Ejemplos
+#### Ejemplos
 
 <img src="images/1-rgb-3.png">
 
@@ -710,7 +710,7 @@ Experimente mezclando los valores HEX a continuación:
 
 <img src="images/1-hex-1.png">
 
-### Ejemplo
+#### Ejemplo
 
 <img src="images/1-hex-2.png">
 
@@ -1218,7 +1218,7 @@ p.three {
 
 La propiedad `border-color` puede tener de uno a cuatro valores (para el top border, right border, bottom border, y el left border). 
 
-Ejemplo
+#### Ejemplo
 
 ```css
 p.one {
@@ -1236,7 +1236,7 @@ p.one {
 
 El color del borde también se puede especificar utilizando un valor hexadecimal (HEX):
 
-Ejemplo
+#### Ejemplo
 
 ```css
 p.one {
@@ -1307,7 +1307,7 @@ p {
 
 El ejemplo anterior da el mismo resultado que este:
 
-#### Ejemplo
+#### Ejemplo
 
 ```css
 p {
@@ -1452,22 +1452,22 @@ p {
 
 ### Más ejemplos
 
-[Todas las propiedades del borde superior en una declaración]()
+[Todas las propiedades del borde superior en una declaración](https://www.w3schools.com/css/tryit.asp?filename=trycss_border-top)
 Este ejemplo demuestra una propiedad abreviada para establecer todas las propiedades para el borde superior en una declaración.
 
-[Establecer el estilo del borde inferior]()
+[Establecer el estilo del borde inferior](https://www.w3schools.com/css/tryit.asp?filename=trycss_border-bottom-style)
 Este ejemplo muestra cómo establecer el estilo del borde inferior.
 
-[Establecer el ancho del borde izquierdo]()
+[Establecer el ancho del borde izquierdo](https://www.w3schools.com/css/tryit.asp?filename=trycss_border-left-width)
 Este ejemplo muestra cómo establecer el ancho del borde izquierdo.
 
-[Establecer el color de los cuatro bordes]()
+[Establecer el color de los cuatro bordes](https://www.w3schools.com/css/tryit.asp?filename=trycss_border-color)
 Este ejemplo muestra cómo establecer el color de los cuatro bordes. Puede tener de uno a cuatro colores.
 
-[Establecer el color del borde derecho]()
+[Establecer el color del borde derecho](https://www.w3schools.com/css/tryit.asp?filename=trycss_border-right-color)
 Este ejemplo muestra cómo establecer el color del borde derecho.
 
-### ¡Ponte a prueba con ejercicios!
+### ¡Ponte a prueba con ejercicios!
 
 :computer: :computer: :computer: :computer:
 
@@ -1475,30 +1475,182 @@ Este ejemplo muestra cómo establecer el color del borde derecho.
 
 Propiedades |	Descripción
 ------------|------------
-border | Sets all the border properties in one declaration
-border-bottom | Sets all the bottom border properties in one declaration
-border-bottom-color | Sets the color of the bottom border
-border-bottom-style | Sets the style of the bottom border
-border-bottom-width | Sets the width of the bottom border
-border-color | Sets the color of the four borders
-border-left | Sets all the left border properties in one declaration
-border-left-color | Sets the color of the left border
-border-left-style | Sets the style of the left border
-border-left-width | Sets the width of the left border
-border-radius | Sets all the four border-*-radius properties for rounded corners
-border-right | Sets all the right border properties in one declaration
-border-right-color | Sets the color of the right border
-border-right-style | Sets the style of the right border
-border-right-width | Sets the width of the right border
-border-style | Sets the style of the four borders
-border-top | Sets all the top border properties in one declaration
-border-top-color | Sets the color of the top border
-border-top-style | Sets the style of the top border
-border-top-width | Sets the width of the top border
-border-width | Sets the width of the four borders
-
+border | Establece todas las propiedades de border en una declaración
+border-bottom | Establece todas las propiedades del bottom border en una declaración 
+border-bottom-color | Establece el color del bottom border
+border-bottom-style | Establece el style del bottom border
+border-bottom-width | Establece el width del bottom border
+border-color | Establece el color de los cuatro borders
+border-left | Establece todas las propiedades del left border en una declaración
+border-left-color | Establece el color del left border
+border-left-style | Establece el style del left border
+border-left-width | Establece el width del left border
+border-radius | Establece las cuatro propiedades de border-*-radius para esquinas redondeadas
+border-right | Establece todas las propiedades del right border en una declaración 
+border-right-color | Establece el color del right border
+border-right-style | Establece el style del right border
+border-right-width | Establece el width del right border
+border-style | Establece el style de los cuatro borders.
+border-top | Establece todas las propiedades del top border en una declaración
+border-top-color | Establece el color del border
+border-top-style | Establece el style del top border
+border-top-width | Establece el width del top border
+border-width | Establece el width de los cuatro borders.
 
 ## CSS Margins
+
+<img src="images/1-margin-1.png"> 
+
+:computer:
+
+### CSS Margins
+
+Las propiedades CSS `margin`  se utilizan para crear espacio alrededor de los elementos, fuera de los bordes definidos.
+
+Con CSS, tienes control total sobre los márgenes. Hay propiedades para establecer el margen para cada lado de un elemento (top, right, bottom y left).
+
+### Margin - Individual Sides
+
+CSS tiene propiedades para especificar el margen para cada lado de un elemento:
+
+* margin-top
+* margin-right
+* margin-bottom
+* margin-left
+
+Todas las propiedades margin pueden tener los siguientes valores:
+
+* **auto** - el navegador calcula el margen
+* **length** - especifica un margin en px, pt, cm, etc.
+* **%** - especifica un margin en % del width del elemento contenedor
+* **inherit** - especifica que el margin debe heredarse del elemento padre
+
+**Tip**: Se permiten valores negativos.
+
+#### Ejemplo
+
+Establezca diferentes margins para los cuatro sides de un elemento `<p>`:
+
+```css
+p {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
+```
+
+:computer:
+
+<img src="images/1-margin-2.png"> 
+
+<img src="images/1-margin-3.png"> 
+
+### Margin - Shorthand Property
+
+Para acortar el código, es posible especificar todas las propiedades de margen en una propiedad.
+
+La propiedad `margin` es una propiedad abreviada de las siguientes propiedades de margen individuales:
+
+* margin-top
+* margin-right
+* margin-bottom
+* margin-left
+
+Pues así es como funciona:
+
+Si la propiedad `margin`tiene cuatro valores:
+
+* **margin: 25px 50px 75px 100px;**
+   * top margin es 25px
+   * right margin es 50px
+   * bottom margin es 75px
+   * left margin es 100px
+
+#### Ejemplo
+
+Use la propiedad margin de forma reducida con cuatro valores:
+
+```css
+p {
+  margin: 25px 50px 75px 100px;
+}
+```
+
+:computer:
+
+<img src="images/1-margin-4.png"> 
+
+<img src="images/1-margin-5.png"> 
+
+Si la propiedad `margin` tiene tres valores:
+
+* **margin: 25px 50px 75px;**
+   * top margin es 25px
+   * right y left margins son 50px
+   * bottom margin es 75px
+
+#### Ejemplo
+
+Use la propiedad de taquigrafía de margen con tres valores: 
+
+```css
+p {
+  margin: 25px 50px 75px;
+}
+```
+
+:computer:
+
+<img src="images/1-margin-6.png"> 
+
+<img src="images/1-margin-7.png"> 
+
+Si la propiedad `margin` tiene dos valores:
+
+* **margin: 25px 50px;**
+   * top y bottom margins son 25px
+   * right y left margins son 50px
+
+#### Ejemplo
+
+Use la propiedad de taquigrafía de margen con dos valores: 
+
+```css
+p {
+  margin: 25px 50px;
+}
+```
+
+:computer:
+
+<img src="images/1-margin-8.png"> 
+
+<img src="images/1-margin-9.png">
+
+Si la propiedad `margin` tiene un valor:
+
+* **margin: 25px;**
+   * todos los cuatro margins son 25px
+   
+#### Example
+
+Use la propiedad de taquigrafía de margen con un valor: 
+
+```css
+p {
+  margin: 25px;
+}
+```
+
+:computer:
+
+<img src="images/1-margin-10.png"> 
+
+<img src="images/1-margin-11.png">
+
+### The auto Value
+
 ## CSS Padding
 ## CSS Height/Width
 ## CSS Box Model
