@@ -1377,6 +1377,58 @@ p {
 
 La propiedad `border-style` se usa en el ejemplo anterior. Sin embargo, también funciona con `border-width` y `border-color`.
 
+## CSS Shorthand Border Property
+
+### CSS Border - Shorthand Property
+
+Como viste en la página anterior, hay muchas propiedades a tener en cuenta al tratar con los bordes.
+
+Para acortar el código, también es posible especificar todas las propiedades de borde individuales en una propiedad.
+
+La propiedad `border` es una propiedad abreviada de las siguientes propiedades de borde individuales:
+
+* `border-width`
+* `border-style` (necesario)
+* `border-color`
+#### Ejemplo
+
+```css
+p {
+  border: 5px solid red;
+}
+```
+
+Resultado:
+
+<img src="images/1-border-15.png">
+
+:computer:
+
+<img src="images/1-border-16.png">
+
+<img src="images/1-border-17.png">
+
+También puede especificar todas las propiedades de borde individuales para un solo lado:
+
+### Left Border
+
+```css
+p {
+  border-left: 6px solid red;
+  background-color: lightgrey;
+}
+```
+
+Resultado:
+
+<img src="images/1-border-18.png">
+
+:computer:
+
+<img src="images/1-border-19.png">
+
+<img src="images/1-border-20.png">
+
 ## CSS Margins
 ## CSS Padding
 ## CSS Height/Width
